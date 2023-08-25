@@ -56,7 +56,7 @@ app.use("/hand",handbag)
 app.use("/bohemian",bohemian)
 app.use("/baho",boho)
 app.use("/casual",casual)
-app.use("/formal",outerwear)
+app.use("/formal",formal)
 app.use("/glam",glam)
 app.use("/streatweer",streat)
 
