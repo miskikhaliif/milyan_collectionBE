@@ -4,13 +4,16 @@ const mongodb = require('mongoose')
 require('dotenv').config()
 app.use(express.json())
 
+const cors = require('cors')
+
 const dbConnection = require('./connection')
 dbConnection()
 
-app.get(async (req,res) =>{
+app.get( '/',async (req,res) =>{
     await res.json("hello")
 })
 
+app.use(cors())
 const shirt = require('./routes/catergories/bottom/shirtRoute')
 const blouses = require('./routes/catergories/bottom/blousesRoute')
 const sweater = require('./routes/catergories/bottom/sweaterRoute')
