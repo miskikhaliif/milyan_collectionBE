@@ -7,6 +7,10 @@ app.use(express.json())
 const dbConnection = require('./connection')
 dbConnection()
 
+app.get(async (req,res) =>{
+    await res.json("hello")
+})
+
 const shirt = require('./routes/catergories/bottom/shirtRoute')
 const blouses = require('./routes/catergories/bottom/blousesRoute')
 const sweater = require('./routes/catergories/bottom/sweaterRoute')
