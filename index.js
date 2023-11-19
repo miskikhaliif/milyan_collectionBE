@@ -9,8 +9,8 @@ const cors = require('cors')
 const dbConnection = require('./connection')
 dbConnection()
 
-app.get( '/',async (req,res) =>{
-     res.json("hello")
+app.get('/',async(req,res)=>{
+    res.json("hiii")
 })
 
 app.use(cors())
